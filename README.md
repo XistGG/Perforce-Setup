@@ -1,6 +1,7 @@
 # Perforce Setup
 
-This repository contains sample files to help you set up your own P4 server.
+This repository contains sample files to help you set up your own P4 server
+for an Unreal Engine project.
 
 `typemap.txt` should be used like `cat typemap.txt | p4 typemap -i`
 **before** you try to add any files to P4.
