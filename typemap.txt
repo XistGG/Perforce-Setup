@@ -18,6 +18,7 @@ TypeMap:
     binary+w //....lib
     binary+w //....app
     binary+w //....dylib
+    binary+w //....so
     binary+w //....stub
     binary+w //....ipa
     ######################################################################
@@ -29,10 +30,12 @@ TypeMap:
     ######################################################################
     text+w //.../Binaries/....config
     text+w //.../Binaries/....modules
+    text+w //.../Binaries/....json
     text+w //.../Binaries/....target
     text+w //.../Binaries/....version
     text+w //.../Binaries/....xml
     text+w //.../Build/....version
+    text+w //.../Engine/Source/.../bin/....xml
     ######################################################################
     # Raw Binary assets that must be checked out to be modified
     ######################################################################
