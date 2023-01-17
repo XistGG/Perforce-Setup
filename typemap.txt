@@ -27,24 +27,17 @@ TypeMap:
     ######################################################################
     # Generated Build files writable by everyone all the time
     ######################################################################
-    text+w //.../Binaries/....json
-    text+w //.../Binaries/....xml
+    text+w //.../Binaries/....config
     text+w //.../Binaries/....modules
-    text+w //.../Binaries/....version
     text+w //.../Binaries/....target
+    text+w //.../Binaries/....version
+    text+w //.../Binaries/....xml
     text+w //.../Build/....version
     ######################################################################
-    # Binary assets that must be checked out to be modified
+    # Raw Binary assets that must be checked out to be modified
     ######################################################################
     binary+l //....bmp
     binary+l //....ico
-    binary+lF //....gif
-    binary+lF //....jpg
-    binary+lF //....jpeg
-    binary+lF //....mp3
-    binary+lF //....mp4
-    binary+lF //....ogg
-    binary+lF //....png
     binary+l //....svg
     binary+l //....tga
     binary+l //....tif
@@ -59,6 +52,16 @@ TypeMap:
     binary+l //....wmv
     binary+l //....wav
     ######################################################################
+    # Compressed Binary assets that must be checked out to be modified
+    ######################################################################
+    binary+lF //....gif
+    binary+lF //....jpg
+    binary+lF //....jpeg
+    binary+lF //....mp3
+    binary+lF //....mp4
+    binary+lF //....ogg
+    binary+lF //....png
+    ######################################################################
     # Text files
     ######################################################################
     text //....bat
@@ -69,6 +72,10 @@ TypeMap:
     text //....cpp
     text //....cs
     text //....csv
+    text //....DotSettings
+    text //....gitattributes
+    text //....gitignore
+    text //....gitmodules
     text //....h
     text //....ini
     text //....json
@@ -77,15 +84,12 @@ TypeMap:
     text //....mm
     text //....p4ignore
     text //....py
+    text //....sh
     text //....txt
     text //....uplugin
     text //....uproject
     text //....xml
     text //....yml
-    ######################################################################
-    # Text files always writable by anyone
-    ######################################################################
-    text+w //....DotSettings
     ######################################################################
     # Localization files
     ######################################################################
