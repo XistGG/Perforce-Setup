@@ -26,17 +26,6 @@ TypeMap:
     ######################################################################
     binary+Sw //....pdb
     ######################################################################
-    # Generated Build files writable by everyone all the time
-    ######################################################################
-    text+w //.../Binaries/....config
-    text+w //.../Binaries/....modules
-    text+w //.../Binaries/....json
-    text+w //.../Binaries/....target
-    text+w //.../Binaries/....version
-    text+w //.../Binaries/....xml
-    text+w //.../Build/....version
-    text+w //.../Engine/Source/.../bin/....xml
-    ######################################################################
     # Raw Binary assets that must be checked out to be modified
     ######################################################################
     binary+l //....bmp
@@ -101,3 +90,15 @@ TypeMap:
     binary+l //.../Localization/....po
     text //.../Localization/....archive
     text //.../Localization/....manifest
+    ######################################################################
+    # Generated Build files writable by everyone all the time
+    # NOTE- MUST PUT THESE **AFTER** THE CATCH-ALL //....type VERSIONS ABOVE
+    ######################################################################
+    text+w //.../Binaries/....config
+    text+w //.../Binaries/....modules
+    text+w //.../Binaries/....json
+    text+w //.../Binaries/....target
+    text+w //.../Binaries/....version
+    text+w //.../Binaries/....xml
+    text+w //.../Build/....version
+    text+w //.../Engine/Source/.../bin/....xml
