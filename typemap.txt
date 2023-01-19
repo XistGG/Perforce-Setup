@@ -101,5 +101,7 @@ TypeMap:
     text+w //.../Binaries/....version
     text+w //.../Binaries/....xml
     text+w //.../Build/....version
+    ######################################################################
+    # Generated Build source
     text+w //.../Engine/Source/.../bin/....json
     text+w //.../Engine/Source/.../bin/....xml
