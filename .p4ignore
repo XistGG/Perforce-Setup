@@ -31,6 +31,9 @@
 *.opensdf
 *.sdf
 
+# Ignore user-specific Visual Studio files
+*.csproj.user
+
 # Ignore DerivedDataCache
 /Engine/DerivedDataCache/*
 **/DerivedDataCache/Boot.ddc
