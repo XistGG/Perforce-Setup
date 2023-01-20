@@ -14,6 +14,7 @@ TypeMap:
     # Generated Binary files writable by everyone all the time
     ######################################################################
     binary+w //....exe
+    binary+w //....exp
     binary+w //....dll
     binary+w //....lib
     binary+w //....app
