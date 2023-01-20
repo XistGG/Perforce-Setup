@@ -103,5 +103,5 @@ TypeMap:
     text+w //.../Build/....version
     ######################################################################
     # Generated Build source
-    text+w //.../Engine/Source/.../bin/....json
-    text+w //.../Engine/Source/.../bin/....xml
+    +w //.../Engine/Source/.../bin/...
+    +w //.../Engine/Source/.../obj/...
