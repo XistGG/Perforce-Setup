@@ -1,3 +1,11 @@
+###############################################################################
+###
+###  For help, see:
+###
+###      https://github.com/XistGG/Perforce-Setup
+###
+###############################################################################
+#
 # Here you can specify files to ignore when adding files to the depot.
 #
 # The syntax for P4IGNORE files is not the same as Perforce syntax.
@@ -23,7 +31,7 @@
 .p4config
 
 ###############################################################################
-###  This .p4config is for a SOURCE-ONLY UProject depot
+###  This .p4ignore is for a SOURCE-ONLY UProject depot
 ###############################################################################
 
 # This is a source-only Depot -- Ignore all Generated Binaries
