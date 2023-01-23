@@ -36,14 +36,9 @@
 ###  This .p4ignore is for an Unreal Engine source depot
 ###############################################################################
 
-# This is a source-only Depot -- Ignore Generated Binaries
-/Engine/Binaries/Linux/*
-/Engine/Binaries/Mac/*
-/Engine/Binaries/Win*/*
-
-# DO NOT IGNORE THESE BINARIES WHICH CONTAIN EPIC REDISTRIBUTABLES
-#!/Engine/Binaries/DotNET/*
-#!/Engine/Binaries/ThirdParty/*
+# This is a source-only Depot -- Ignore all Generated Binaries
+/Engine/Binaries/*
+/Engine/Plugins/**/Binaries/*
 
 # Ignore root Visual Studio solution files.
 # We do check in some sln files in subdirectories,
@@ -58,6 +53,9 @@
 *.sdf
 *.csproj.user
 *.csproj.*.cache
+
+# UBT Plugin .csproj.props can be ignored, this is generated
+/Engine/Plugins/**/Source/**/*.ubtplugin.csproj.props
 
 # Ignore DerivedDataCache
 /Engine/DerivedDataCache/*
