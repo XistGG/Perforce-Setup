@@ -65,7 +65,7 @@ TypeMap:
     text //....cpp
     text //....cs
     text //....csv
-    text //....DotSettings
+    text+w //....DotSettings
     text //....editorconfig
     text //....gitattributes
     text //....gitignore
