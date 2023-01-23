@@ -25,9 +25,8 @@ before you `| p4 typemap -i`
 
 ## C++ Project Source Depot `.p4ignore`
 
-Source: [`.p4ignore`](https://github.com/XistGG/Perforce-Setup/blob/main/.p4ignore)
-
-This is a `.p4ignore` for a C++ (source-only) Project Source Depot.
+[`.p4ignore`](https://github.com/XistGG/Perforce-Setup/blob/main/.p4ignore)
+is for a C++ (source-only) Project Source Depot.
 
 This depot is source-only.
 Each developer must compile the Project independently
@@ -38,15 +37,14 @@ will generate all relevant C++ debug symbols, which are
 purely-generated massive files IMO not worth keeping in SCM.
 These files are vital to aiding in C++ debugging efforts.
 
-For best results, the Engine must also be built in `Debug Editor`,
+For best results, the Engine should also be built in `Debug Editor`,
 and/or the debugging symbols must be downloaded via the 
 Epic Games Launcher for a packaged Engine build.
 
 ## C++ Custom Engine Source Depot `engine.p4ignore`
 
-Source: [`engine.p4ignore`](https://github.com/XistGG/Perforce-Setup/blob/main/engine.p4ignore)
-
-This is a `.p4ignore` for a Custom Engine Source Depot.
+[`engine.p4ignore`](https://github.com/XistGG/Perforce-Setup/blob/main/engine.p4ignore)
+is for a Custom Engine Source Depot.
 
 This depot is source-only.
 Each developer must compile the Engine independently
