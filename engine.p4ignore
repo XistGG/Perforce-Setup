@@ -85,5 +85,9 @@
 .idea/
 .gradle/
 
+# Ignore RiderLink, whose source (whether Engine Plugin or Project Plugin) is managed by Rider
+/Engine/Plugins/Developer/RiderLink/*
+**/Plugins/Developer/RiderLink/*
+
 # Ignore files added by Finder on Mac
 .DS_Store
