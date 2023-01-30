@@ -15,11 +15,13 @@ TypeMap:
     ######################################################################
     binary+w //....exe
     binary+w //....exp
+    binary+w //....debug
     binary+w //....dll
     binary+w //....lib
     binary+w //....app
     binary+w //....dylib
     binary+w //....so
+    binary+w //....sym
     binary+w //....stub
     binary+w //....ipa
     ######################################################################
