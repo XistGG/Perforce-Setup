@@ -1,3 +1,11 @@
+###############################################################################
+###
+###  For help, see:
+###
+###      https://github.com/XistGG/Perforce-Setup
+###
+###############################################################################
+#
 # Perforce File Type Mapping Specifications.
 #
 #  TypeMap:    a list of filetype mappings; one per line.
