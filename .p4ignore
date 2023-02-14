@@ -29,10 +29,16 @@
 
 # Never check in local .p4config overrides
 .p4config
+# Sync scratch file
+/.p4sync.txt
 
 ###############################################################################
 ###  This .p4ignore is for a SOURCE-ONLY UProject depot
 ###############################################################################
+
+# Ignore all Local Developer Plugins
+/Plugins/Developer/*
+**/Plugins/Developer/*
 
 # This is a source-only Depot -- Ignore all Generated Binaries
 /Binaries/*
@@ -41,7 +47,6 @@
 # Ignore root Visual Studio solution files.
 # We do check in some sln files in subdirectories, so only ignore the ones found in the root.
 /*.sln
-/.p4sync.txt
 
 # Ignore all Visual Studio temp files.
 .vs/
@@ -76,10 +81,6 @@
 # Ignore JetBrain's IDE folders
 .idea/
 .gradle/
-
-# Ignore RiderLink, whose source (whether Engine Plugin or Project Plugin) is managed by Rider
-/Plugins/Developer/RiderLink/*
-**/Plugins/Developer/RiderLink/*
 
 # Ignore files added by Finder on Mac
 .DS_Store
