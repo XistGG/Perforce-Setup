@@ -74,6 +74,7 @@ TypeMap:
     text //....config
     text //....cpp
     text //....cs
+    text+w //....csproj.props
     text //....csv
     text+w //....DotSettings
     text //....editorconfig
