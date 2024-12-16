@@ -1,10 +1,3 @@
-###############################################################################
-###
-###  For help, see:
-###
-###      https://github.com/XistGG/Perforce-Setup
-###
-###############################################################################
 #
 # Perforce File Type Mapping Specifications.
 #
@@ -19,9 +12,12 @@
 
 TypeMap:
     ######################################################################
-    # Generated Binary files writable by everyone all the time
+    ###  For help, see:
+    ###    https://github.com/XistGG/Perforce-Setup
     ######################################################################
-    binary+w //....exe
+    ### Generated Binary files writable by everyone all the time
+    ######################################################################
+    binary+wx //....exe
     binary+w //....exp
     binary+w //....debug
     binary+w //....dll
@@ -29,15 +25,17 @@ TypeMap:
     binary+w //....app
     binary+w //....dylib
     binary+w //....so
+    ## versioned shared objects like "libfoo.so.1"
+    binary+w //.../lib*.so.*
     binary+w //....sym
     binary+w //....stub
     binary+w //....ipa
     ######################################################################
-    # Generated Binaries writable by everyone (keep only latest revision)
+    ### Generated Binaries writable by everyone (keep only latest revision)
     ######################################################################
     binary+Sw //....pdb
     ######################################################################
-    # Raw Binary assets that must be checked out to be modified
+    ### Raw Binary assets that must be checked out to be modified
     ######################################################################
     binary+l //....bmp
     binary+l //....ico
@@ -55,7 +53,7 @@ TypeMap:
     binary+l //....wmv
     binary+l //....wav
     ######################################################################
-    # Compressed Binary assets that must be checked out to be modified
+    ### Compressed Binary assets that must be checked out to be modified
     ######################################################################
     binary+lF //....gif
     binary+lF //....jpg
@@ -65,17 +63,20 @@ TypeMap:
     binary+lF //....ogg
     binary+lF //....png
     ######################################################################
-    # Text files
+    ### Text files
     ######################################################################
-    text //....bat
+    text+x //....bat
     text //....c
     text //....cmd
     text //....collection
+    text+x //....command
     text //....config
     text //....cpp
     text //....cs
+    ## Visual Studio updates .csproj.props without regard for Perforce (add +w)
     text+w //....csproj.props
     text //....csv
+    ## Rider updates .DotSettings without regard for perforce (add +w)
     text+w //....DotSettings
     text //....editorconfig
     text //....gitattributes
@@ -89,14 +90,14 @@ TypeMap:
     text //....mm
     text //....p4ignore
     text //....py
-    text //....sh
+    text+x //....sh
     text //....txt
     text //....uplugin
     text //....uproject
     text //....xml
     text //....yml
     ######################################################################
-    # Localization files
+    ### Localization files
     ######################################################################
     binary+l //.../Localization/....locmeta
     binary+l //.../Localization/....locres
@@ -104,8 +105,8 @@ TypeMap:
     text //.../Localization/....archive
     text //.../Localization/....manifest
     ######################################################################
-    # Generated Build files writable by everyone all the time
-    # NOTE- MUST PUT THESE **AFTER** THE CATCH-ALL //....type VERSIONS ABOVE
+    ### Generated Build files writable by everyone all the time
+    ### NOTE- MUST PUT THESE **AFTER** THE CATCH-ALL //....type VERSIONS ABOVE
     ######################################################################
     text+w //.../Binaries/....config
     text+w //.../Binaries/....modules
@@ -115,6 +116,11 @@ TypeMap:
     text+w //.../Binaries/....xml
     text+w //.../Build/....version
     ######################################################################
-    # Generated Build source
+    ### Generated Build source
+    ### These files are typically found in ThirdParty build directories,
+    ### and the build process doesn't reliably check them out.
+    ######################################################################
+    +w //.../Engine/Plugins/.../Source/.../bin/...
+    +w //.../Engine/Plugins/.../Source/.../obj/...
     +w //.../Engine/Source/.../bin/...
     +w //.../Engine/Source/.../obj/...
