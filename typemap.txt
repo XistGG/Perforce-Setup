@@ -42,6 +42,7 @@ TypeMap:
     binary+l //....bmp
     binary+l //....ico
     binary+l //....fbx
+    binary+l //....psd
     binary+l //....tga
     binary+l //....tif
     binary+l //....tiff
