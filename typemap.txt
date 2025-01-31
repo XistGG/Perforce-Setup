@@ -39,9 +39,11 @@ TypeMap:
     ######################################################################
     ### Raw Binary assets that must be checked out to be modified
     ######################################################################
+    binary+l //....blend
     binary+l //....bmp
     binary+l //....ico
     binary+l //....fbx
+    binary+l //....max
     binary+l //....psd
     binary+l //....tga
     binary+l //....tif
